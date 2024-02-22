@@ -7,9 +7,21 @@
     margin-top: 1rem;
     font-size: 110%;
     font-weight: 200;
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 @media (min-width: 1800px) {
     .footer {
         margin-top: 9rem;
     }
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
