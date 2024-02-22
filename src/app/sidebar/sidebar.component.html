@@ -1,0 +1,18 @@
+<p-sidebar
+  [(visible)]="isSidebarOpen"
+  position="left"
+  [showCloseIcon]="false"
+  [dismissible]="false"
+>
+  <div style="display: flex; justify-content: flex-end">
+    <i class="pi pi-times" (click)="closeSidebar.emit()"></i>
+  </div>
+  <div class="card flex justify-content-center sidebar-links">
+    <p-menu (click)="closeSidebar.emit()" [model]="mainLinks"></p-menu>
+  </div>
+  <div style="display: flex; justify-content: center" class="sidebar-icons">
+    <a *ngFor="let icon of icons" [href]="icon.url">
+      <i [class]="icon.icon"></i>
+    </a>
+  </div>
+</p-sidebar>

@@ -1,0 +1,16 @@
+<section id="photos">
+  <h2>FOTKA</h2>
+  <div class="main-container">
+    <div class="image-gallery-row">
+      <div class="image-gallery-column" *ngFor="let column of galleryColumns">
+        <img
+          *ngFor="let photoGallery of column"
+          [src]="photoGallery.mainImgPath"
+          style="width: 100%"
+          [routerLink]="['/photos', photoGallery.id]"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

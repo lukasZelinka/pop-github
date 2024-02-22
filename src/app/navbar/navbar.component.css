@@ -1,0 +1,82 @@
+:host {
+    display: block;   
+    height: 5.625rem;
+}
+p-toolbar {
+    background-color: white;
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 5.625rem;
+    z-index: 2;
+}
+/* primeNg added DYNAMIC component, ::ng-deep will be deprecated */
+:host ::ng-deep div.p-toolbar.p-component {
+    background-color: white;
+    max-width: 1140px;
+    margin: auto;
+    border-radius: 0;
+    border: none;
+}
+#pop-logo {
+    max-width: 50px;
+}
+@media screen and (max-width: 899.89px) {
+.navbar-social-icons,
+.navbar-links {
+        display: none;
+    }
+}
+#social-icons-wrapper {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+#social-icons-wrapper>a {
+    padding: 0px 10px;
+}
+#social-icons-wrapper a {
+    color: #999494;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+#social-icons-wrapper a:hover {
+    margin-top: -10px;
+    transform: translate(0, -8);
+}
+.navbar-links a {
+    color: black;
+    padding: 0.4em;
+    font-size: 0.85rem;
+    margin-left: 1.2em;
+    font-weight: 400;
+    transition: all ease-in-out 700ms;
+}
+.navbar-links a:hover,
+.navbar-links .activebutton {
+    color: white;
+    background-color: black;
+}
+#pop-logo {
+    transition: transform 0.5s linear;
+    cursor: pointer;
+}
+i.pi.pi-bars {
+    font-size: 2em;
+    cursor: pointer;
+    transition: all ease-in-out 700ms;
+}
+i.pi.pi-bars.active {
+    transform: rotate(90deg);
+}
+@media screen and (min-width: 900px) {
+    i.pi.pi-bars {
+        display: none;
+    }
+}
+
+
+

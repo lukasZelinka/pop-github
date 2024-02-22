@@ -1,0 +1,16 @@
+<section id="videos">
+  <h2>VIDEO</h2>
+  <div class="main-container grid-container">
+    <div *ngFor="let video of videos; let i = index" class="grid-item">
+      <img alt="Card" src="{{ video.thumbnail }}" (click)="openFullscreen(i)" />
+      <video
+        #myVideo
+        [controls]="true"
+        type="video/mp4"
+        (click)="openFullscreen(i)"
+      ></video>
+    </div>
+  </div>
+  <div class="filler"></div>
+</section>
+<app-footer></app-footer>

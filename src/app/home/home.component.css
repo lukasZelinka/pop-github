@@ -1,0 +1,30 @@
+#home {
+    padding-top: 2rem;
+}
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+}
+video:hover {
+    cursor: pointer;
+}
+#video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    margin: 0 0 4rem 0;
+}
+@media screen and (max-width: 600px) {
+    video {
+        height: 96%;
+    }
+    #video-wrapper {
+        height: 20rem;
+        margin: 1em 0;
+    }
+}
